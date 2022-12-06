@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+
+  <!--CSS-->
+  <style>
+    * {
+      background-color: #f1f1f1;
+      font-family: Arial, Helvetica, sans-serif;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .main {
+      border: 5px solid;
+      border-color: #dda624;
+      padding-bottom: 30px;
+      margin-left: 450px;
+      margin-right: 450px;
+      align-items: center;
+    }
+    .form {
+      font-size: x-large;
+      align-items: center;
+    }
+    label {
+      display: inline-block;
+      width: 300px;
+      text-align: right;
+    }
+    .button__primary {
+      background-image: linear-gradient(
+        to right,
+        #e9e91b 0%,
+        #dda624 51%,
+        #ff9e2f 100%
+      );
+    }
+    .button__primary {
+      padding: 0.5rem 1rem;
+      text-align: center;
+      text-transform: capitalize;
+      transition: 0.5s;
+      font-weight: 600;
+      background-size: 500% auto;
+      color: black;
+      box-shadow: 0 0 20px #eee;
+      border-radius: 4px;
+      display: inline;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .button__primary:hover {
+      background-position: right center; /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+    }
+    @media screen and (max-width: 500px) {
+            .header a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+            .header-right {
+                float: none;
+            }
+  </style>
+
+  <body>
+    <div class="main" align="center">
+      <div class="main2">
+        <br />
+        <section class="bg">
+          <form id="register" class="form" method="post">
+            <label width="100px"> Name : </label>
+            <input
+              type="text"
+              name="fname"
+              id="name"
+              placeholder="Enter Your Full name"
+            />
+            <br />
+            <br />
+            <label>Aadhar Number : </label>
+            <input
+              type="text"
+              name="lname"
+              id="name"
+              placeholder="As per adhaar card"
+            />
+            <br />
+            <br />
+            <label>Date of Birth : </label>
+            <input type="date" name="age" />
+            <br />
+            <br />
+            <label class="gender1">Gender : </label>
+            <input class="gender" type="radio" name="gender" id="male" />
+            <span id="male">Male</span>
+            <input class="gender" type="radio" name="gender" id="female" />
+            <span id="female">Female</span>
+            <input
+              class="gender"
+              type="radio"
+              name="gender"
+              id="notpreferrred"
+            />
+            <span id="notpreferred">Other</span>
+            <br />
+            <br />
+            <label class="file">Upload Your Photo:</label>
+            <input class="file" type="file" style="text-indent: 3em" />
+            <br /><br />
+            <label class="file">Upload Your Aadhar card: </label>
+            <input class="file" type="file" style="text-indent: 3em" />
+            <br /><br />
+            <label class="file">Upload Your Address Proof: </label>
+            <input class="file" type="file" style="text-indent: 3em" />
+            <br />
+            <br />
+            <br />
+
+            <button
+              class="f-form button__primary w3-centre"
+              id="f-form"
+              target="_blank"
+              style="margin-right: 30px"
+            >
+              Submit
+            </button>
+
+            <button
+              class="f-form button__primary w3-centre"
+              id="f-form"
+              target="_blank"
+              style="margin-right: 30px"
+            >
+              Reset
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
